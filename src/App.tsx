@@ -27,25 +27,27 @@ function App() {
   return (
     <div className="h-screen flex justify-center items-center">
       {isCorrect === "true" ? (
-        <div>Correct</div>
+        <div className="text-6xl font-extralight  ">Correct!</div>
       ) : isCorrect === "false" ? (
         <div>
-          <div className="flex  justify-center">{password}</div>
+          <div className="text-3xl font-extralight  flex justify-center border-2 h-12 border-slate-700 m-6">
+            {password}
+          </div>
           <div className="flex  justify-center">
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("1")}
             >
               1
             </button>
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("2")}
             >
               2
             </button>
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("3")}
             >
               3
@@ -53,19 +55,19 @@ function App() {
           </div>
           <div className="flex  justify-center">
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("4")}
             >
               4
             </button>
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("5")}
             >
               5
             </button>
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("6")}
             >
               6
@@ -73,19 +75,19 @@ function App() {
           </div>
           <div className="flex justify-center">
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("7")}
             >
               7
             </button>
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("8")}
             >
               8
             </button>
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("9")}
             >
               9
@@ -93,32 +95,34 @@ function App() {
           </div>
           <div className="flex justify-center">
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("0")}
             >
               0
             </button>
           </div>
-          <div className="flex justify-center">It is incorrect</div>
+          <div className="text-3xl font-extralight  flex justify-center mt-7">
+            It is incorrect
+          </div>
         </div>
       ) : (
         <div>
           <div className="flex  justify-center">{password}</div>
           <div className="flex  justify-center">
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("1")}
             >
               1
             </button>
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("2")}
             >
               2
             </button>
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("3")}
             >
               3
@@ -126,19 +130,19 @@ function App() {
           </div>
           <div className="flex  justify-center">
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("4")}
             >
               4
             </button>
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("5")}
             >
               5
             </button>
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("6")}
             >
               6
@@ -146,19 +150,19 @@ function App() {
           </div>
           <div className="flex justify-center">
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("7")}
             >
               7
             </button>
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("8")}
             >
               8
             </button>
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("9")}
             >
               9
@@ -166,7 +170,7 @@ function App() {
           </div>
           <div className="flex justify-center">
             <button
-              className="bg-slate-500 flex items-center justify-center rounded-full h-20 text-lg w-20 m-2 text-white"
+              className="bg-slate-500 flex items-center justify-center rounded-full h-14 text-lg w-14 m-2 text-white"
               onClick={() => handleClick("0")}
             >
               0
