@@ -5,7 +5,7 @@ function App() {
   const [password, setPassword] = useState<string[]>([]);
   const [isCorrect, setIsCorrect] = useState("");
 
-  const masterPassword = ["4", "5", "6", "7"];
+  const masterPassword = ["3", "1", "4", "1"];
 
   function handleClick(number: string) {
     const newPassword = [...password, number];
@@ -15,8 +15,12 @@ function App() {
     if (newPassword.join() === masterPassword.join()) {
       setIsCorrect("true");
     }
-    if (newPassword.join() != masterPassword.join()) {
+    if (
+      newPassword.length === 4 &&
+      newPassword.join() != masterPassword.join()
+    ) {
       setIsCorrect("false");
+      setPassword([]);
     }
   }
 
@@ -24,7 +28,7 @@ function App() {
     <div className="h-screen flex justify-center items-center">
       {isCorrect === "true" ? (
         <div>Correct</div>
-      ) : isCorrect === "false" && password.length === 4 ? (
+      ) : isCorrect === "false" ? (
         <div>
           <div className="flex  justify-center">{password}</div>
           <div className="flex  justify-center">
